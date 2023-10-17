@@ -48,9 +48,9 @@ class Game:
             print("\tYou won! Congratulations!\n")
         else:
             print("\tYou lose! You were hanged :(\n")
-        print("\tPress Enter to exit\n\tor Type 'start' to start a new game: ", end='')
+        print("\tPress Enter to to start a new game\n\tor Type 'q' to quit: ", end='')
         ans = input()
-        if ans.lower() == 'start':
+        if "q" not in ans.lower():
             self.loop()
         else:
             return
@@ -73,7 +73,7 @@ class Game:
             if len(char) != 1:
                 continue
             else:
-                if not char.isalpha:
+                if not char.isalpha():
                     print('\tA quite strange letter.. lol')
                     time.sleep(1)
                 elif char in word and char not in word_list:
