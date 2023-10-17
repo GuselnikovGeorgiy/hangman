@@ -48,7 +48,7 @@ class Game:
             print("\tYou won! Congratulations!\n")
         else:
             print("\tYou lose! You were hanged :(\n")
-        print("\tPress Enter to to start a new game\n\tor Type 'q' to quit: ", end='')
+        print("\tPress Enter to start a new game\n\tor Type 'q' to quit: ", end='')
         ans = input()
         if "q" not in ans.lower():
             self.loop()
